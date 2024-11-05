@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*공통요소, 헤더, 푸터 정보*/
+
+/*공통*/
+#wrap{
+  min-width: 380px;
+  position: relative;
+}
+
+.inner{
+  height: 1080px;
+  max-width: 1300px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+header{
+  position: relative;
+  height: 100px;
+  z-index: 999;
+}
+
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header h1 img{
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+header .utill{
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+header .ham img{
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dim{
+  background: rgba(0,0,0,0.8); 
+  position: fixed; 
+  right: 0; 
+  top: 0; 
+}
+
+.mgnb_wrap{ 
+  z-index: 999999;
+  position: fixed; 
+  left: -100%;
+  top: 0; 
+  width: 400px; 
+  height: 100%; 
+  background: #ddd; 
+  padding: 150px 50px 50px;
+}
+
+.mgnb > li{ 
+  padding: 20px 0; 
+  border-bottom: 1px solid #ddd; 
+  text-transform: uppercase; 
+}
+
+.mdepth2{ 
+  padding: 10px 0 0 40px; 
+}
+
+.mdepth2 > li a{ 
+  color:#666; 
+  font-size: 1.4rem; 
+}
+
+.mdepth2 > li{ 
+  position: relative; 
+}
+
+.mdepth2 > li:before{ 
+  content: ''; 
+  width: 5px; 
+  height: 5px; 
+  background: #999; 
+  border-radius: 50%; 
+  position: absolute; 
+  left: -13px; 
+  top: 10px; 
+}
+
+.mgnb_close{ 
+  position: absolute; 
+  right: 30px; 
+  top: 30px;  
+  color: #000; 
+  font-size: 1.5rem; 
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer; 
+}
+
+.header2{
+  position: relative;
+  height: 70px;
+  z-index: 999;
+}
+
+.header2 .inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header2 .gnb{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header2 .gnb > li{ 
+  position: relative;
+}
+
+.header2 .gnb > li > a{ 
+  display: block; 
+  padding: 10px 50px 15px;
+}
+
+.header2 .gnb > li:nth-child(n+5) a{
+  color: #999;
+}
+
+.header2 .depth2{ 
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  top: 50px; 
+  background: #000; 
+  padding: 20px 20px 30px; 
+  width: 130px; 
+  border-radius: 10px; 
+}
+
+.header2 .depth2 > li{ 
+  font-size: 1.4rem; 
+  text-align: center; 
+  padding: 3px 0; 
+}
+
+.header2 .depth2 > li > a{ 
+  transition: opacity 0.5s; 
+  color: #fff; 
+  opacity: 0.7; 
+}
+
+.header2 .depth2 > li > a:hover{ 
+  opacity: 1; 
+}
+
+.header2 .search-box{
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  width: 300px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+}
+
+.header2 .search-box input{
+  width: 90%;
+  padding: 10px;
+  background-color: transparent;
+}
+.header2 .search-box button{
+  width: 16px;
+  height: 16px;
+  background: url(../image/Asset_5.png) no-repeat center / contain;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+}
+.header2 .lang{
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 30px;
+}
+.header2 .lang li a{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*footer*/
+footer{
+  display: block;
+  background-color: #ddd;
+}
+
+footer .inner{
+  height: 500px;
+  position: relative;
+}
+
+footer .footer_logo{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px 0 0;
+}
+
+footer .footer_txt{
+  color: #000;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_txt .add1{
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt .add2{
+  position: absolute;
+  top: 40%;
+  left: 56%;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt .add3{
+  position: absolute;
+  top: 64%;
+  left: 56%;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt .add4{
+  position: absolute;
+  top: 34%;
+  left: 77%;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt .add5{
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt .add6{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+footer .footer_txt span{
+  font-weight: bold;
+  color: #000;
+  font-size: 2.4rem;
+}
+
