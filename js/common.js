@@ -37,4 +37,13 @@ $(document).ready(function(){ //실행틀 시작
       $(this).children(".depth2").stop().fadeOut();
   });
 
+  $(".search").hide();
+    $(".btn_search").click(function () {
+        $(".search").fadeIn();
+        $(".search input[type='text']").focus();
+    });
+    $(".search_close").click(function () {
+        $(".search").fadeOut();
+    });
+
 });// 실행틀 끝
